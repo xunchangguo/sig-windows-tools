@@ -8,6 +8,7 @@ before_install:
   - docker build -t xunchangguo/windows:flannel-1809-v0.1.2 -f kubeadm/flannel/Dockerfile
   - docker build -t xunchangguo/windows:kube-proxy-1809-v0.1.2 -f kubeadm/kube-proxy/Dockerfile
   - docker build -t xunchangguo/windows:pause-1809-v0.1.2 -f cmd/wincat/Dockerfile
+  - chmod +x *.sh
 
 deploy:
   provider: script
