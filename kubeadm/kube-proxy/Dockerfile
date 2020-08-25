@@ -1,5 +1,5 @@
-ARG k8sVersion="v1.17.3"
-ARG servercoreTag="ltsc2019"
+ARG k8sVersion="v1.18.3"
+ARG servercoreTag="1809-amd64"
 
 FROM mcr.microsoft.com/windows/servercore:${servercoreTag}
 SHELL ["powershell", "-NoLogo", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
