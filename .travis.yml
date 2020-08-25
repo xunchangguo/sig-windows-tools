@@ -1,5 +1,4 @@
 os: windows
-language: golang
 sudo: required
 services:
   - docker
