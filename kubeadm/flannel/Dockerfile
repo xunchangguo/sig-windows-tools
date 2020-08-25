@@ -1,5 +1,5 @@
-ARG servercoreTag="ltsc2019"
-ARG cniVersion="0.8.5"
+ARG servercoreTag="1809-amd64"
+ARG cniVersion="0.8.6"
 ARG golangTag=windowsservercore-1809
 
 FROM golang:${golangTag} as builder
