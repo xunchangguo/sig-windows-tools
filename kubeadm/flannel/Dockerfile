@@ -3,7 +3,7 @@ ARG cniVersion="0.8.6"
 ARG golangTag=windowsservercore-1809
 
 FROM golang:${golangTag} as builder
-ADD setup.go build/
+ADD kubeadm/flannel/setup.go build/
 RUN go build -o build/setup.exe build/setup.go
 
 FROM mcr.microsoft.com/windows/servercore:${servercoreTag}
