@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+docker push xunchangguo/windows:flannel-1809-v0.1.2
+docker push xunchangguo/windows:kube-proxy-1809-v0.1.2
+docker push xunchangguo/windows:pause-1809-v0.1.2
